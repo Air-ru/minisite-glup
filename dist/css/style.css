@@ -1,0 +1,17 @@
+.a {
+  border: 1px solid #000;
+  font-size: 0.52083vw;
+}
+
+.a .b {
+  color: #000;
+}
+
+h3 {
+  margin: 0;
+  font-size: calc(2.3301vw + 15.26214px);
+}
+
+.background {
+  background-image: url(../img/marx-kv.jpg);
+}

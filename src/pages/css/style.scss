@@ -1,0 +1,17 @@
+@import "../../common/css/tool.scss";
+$display-max: 1920;
+$display-min: 375;
+.a {
+  border: 1px solid #000;
+  font-size: vw(10,$display-max);
+  .b {
+    color: #000;
+  }
+}
+h3{
+  margin: 0;
+  @include fluid($display-max,$display-min,'font-size',24,60);
+}
+.background{
+  background-image: url(../img/marx-kv.jpg);
+}

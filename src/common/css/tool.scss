@@ -1,0 +1,9 @@
+@mixin fluid($display-max, $display-min, $property, $minValue, $maxValue) {
+  $x: ($maxValue - $minValue)/ ($display-max - $display-min);
+  $y: $maxValue - $display-max * $x;
+  #{$property}: calc(#{100 * $x}vw + #{$y}px);
+}
+
+@function vw( $px,$display) {
+  @return ($px / $display) * 100vw;
+}
