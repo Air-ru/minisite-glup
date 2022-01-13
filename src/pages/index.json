@@ -1,7 +1,8 @@
 {
-    "path": {
-        "/js/": "/js/",
-        "/css/": "/css/",
-        "/img/":"/img/"
-    }
+	"data": {},
+	"path": {
+		"/js/": "/js/",
+		"/css/": "/css/",
+		"/img/": "/img/"
+	}
 }

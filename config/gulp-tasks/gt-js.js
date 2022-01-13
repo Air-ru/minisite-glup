@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
-const connect = require('gulp-connect')
+const livereload = require('gulp-livereload')
 const filter = require('gulp-filter')
 
 // 打包页面js
@@ -16,6 +16,6 @@ gulp.task('pages-js', function (done) {
         }))
         .pipe(f.restore)
         .pipe(gulp.dest('./dist/'))
-        .pipe(connect.reload());
+        .pipe(livereload());
     done()
 });
