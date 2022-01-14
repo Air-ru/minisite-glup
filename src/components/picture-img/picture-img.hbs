@@ -1,12 +1,9 @@
 <picture>
-    <source type="image/webp" media="(max-aspect-ratio: 1/1)" srcset="<%= src %>.webp">
+    <source type="image/webp" media="(max-aspect-ratio: 1/1)" srcset="{{pictureSrc src}}.webp">
     <source type="image/webp" media="(min-aspect-ratio: 1/1) and (min-width: 1024px)"
-        srcset="<%= src %>.webp 1x , <%= src %>@2x.webp 1.5x">
-    <source type="image/png" media="(max-aspect-ratio: 1/1)" srcset="<%= src %>.png">
+        srcset="{{pictureSrc src}}.webp 1x , {{pictureName src}}@2x.webp 1.5x">
+    <source type="image/png" media="(max-aspect-ratio: 1/1)" srcset="{{pictureSrc src}}.png">
     <source type="image/png" media="(min-aspect-ratio: 1/1) and (min-width: 1024px)"
-        srcset="<%= src %>.png 1x , <%= src %>@2x.png 1.5x">
-    <source type="image/jpeg" media="(max-aspect-ratio: 1/1)" srcset="<%= src %>.jpg">
-    <source type="image/jpeg" media="(min-aspect-ratio: 1/1) and (min-width: 1024px)"
-        srcset="<%= src %>.jpg 1x , <%= src %>@2x.jpg 1.5x">
-    <img src="<%= src %>" class="<%= className %>" alt="<%= alt %>" />
+        srcset="{{pictureSrc src}}.png 1x , {{pictureSrc src}}@2x.png 1.5x">
+    <img src="{{pictureSrc src}}" class="<%= className %>" alt="<%= alt %>" />
 </picture>

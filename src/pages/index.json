@@ -1,5 +1,10 @@
 {
-	"data": {},
+	"data": {
+		"img": {
+			"kv": "./img/marx-kv.png"
+		}
+	},
+
 	"path": {
 		"/js/": "/js/",
 		"/css/": "/css/",
